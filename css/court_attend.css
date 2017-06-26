@@ -1,0 +1,157 @@
+.coolscrollbar {
+  scrollbar-arrow-color: yellow;
+  scrollbar-base-color: lightsalmon;
+}
+/*头部样式*/
+.navbar-style-custom {
+  background: #2B99FF;
+}
+.navbar-style-custom #nav_logo a {
+  display: block;
+  overflow: hidden;
+  background-color: #2B99FF;
+  color: #fff;
+  margin: 25px auto;
+  vertical-align: middle;
+}
+.navbar-style-custom #nav_logo a h1 {
+  margin: 0;
+}
+.navbar-style-custom #nav_logo a:hover {
+  text-decoration: none;
+}
+/*主体内容样式*/
+#section {
+  background-color: #F0F8FF;
+  padding-top: 114px;
+}
+#section .container {
+  width: 100%;
+}
+#section .container .row {
+  padding: 2rem;
+}
+#section .container .row .col-xs-8 .thumbnail {
+  box-shadow: 5px 5px 5px #ddd;
+  padding: 2rem;
+  text-align: center;
+}
+#section .container .row .col-xs-8 .thumbnail #video {
+  width: 100%;
+  height: 550px;
+  background-color: #000;
+  position: relative;
+}
+#section .container .row .col-xs-8 .thumbnail #video div {
+  padding: 10px;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  width: 10%;
+  margin: 0  5px;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p img {
+  margin: 5px auto;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p a {
+  color: #fff;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p a：hover {
+  color: #fff;
+  text-decoration: none;
+}
+#section .container .row .col-xs-8 .thumbnail .caption {
+  font-size: 24px;
+}
+#section .container .row .col-xs-8 .thumbnail .caption h3 {
+  text-align: left;
+  color: #3B9DFF;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row .col-xs-3 {
+  padding: 0;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row .col-xs-3 ul li b {
+  font-weight: normal;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row .col-xs-3 ul li span {
+  color: #999;
+}
+#section .container .row .col-xs-4 .panel {
+  box-shadow: 5px 5px 5px #ddd;
+}
+#section .container .row .col-xs-4 .panel .panel-heading {
+  color: #3B9DFF;
+  background-color: #fff;
+}
+#section .container .row .col-xs-4 .panel .panel-body {
+  height: 540px;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.left {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.left a {
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  background-color: #D9F4FE;
+  border-radius: 5px;
+  color: #000;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.left a:hover {
+  text-decoration: none;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.left i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px 15px 10px 0;
+  border-style: solid;
+  border-color: transparent #D9F4FE transparent transparent;
+  left: -15px;
+  top: 10px;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.right {
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.right a {
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  color: #000;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.right a:hover {
+  text-decoration: none;
+}
+#section .container .row .col-xs-4 .panel .panel-body span.right i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px 0 10px 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #F5F5F5;
+  left: 210px;
+  top: 10px;
+}
+#section .container .row .col-xs-4 .panel .panel-footer {
+  padding: 0;
+  background-color: #fff;
+}
+#section .container .row .col-xs-4 .panel .panel-footer textarea {
+  border: none;
+}

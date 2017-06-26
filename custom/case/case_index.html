@@ -1,0 +1,32 @@
+<div ng-controller="mainIndexCtrl">
+	<div id="tab_index" class="show">
+		<div class="row">
+			<div class="col-xs-4" ng-repeat="case in caseIndexList track by $index">
+				<div class="thumbnail">
+					<ul class="list-unstyled">
+						<li>
+							<b>审讯地点：</b>
+							<span>{{case.caseAddress}}</span>
+						</li>
+						<li>
+							<b>审讯案号：</b>
+							<span>{{case.caseNumber}}</span>
+						</li>
+						<li>
+							<b>审讯时间：</b>
+							<span>{{case.caseTime}}</span>
+						</li>
+						<li>
+							<b>录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;制：</b>
+							<input type="checkbox" id="checkbox_input" checked>
+							<label for="checkbox_input" style="color: #999;font-weight: normal">进行录制</label>
+						</li>
+						<li class="text-center">
+							<button class="btn btn-default btn-lg" style="background-color: #2B99FF;color: #fff" ng-click="enterCourt($index)">庭审出席</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

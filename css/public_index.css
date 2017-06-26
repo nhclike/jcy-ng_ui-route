@@ -1,0 +1,136 @@
+.model_center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.show {
+  display: block;
+}
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd,
+form {
+  margin: 0;
+  padding: 0;
+}
+#section {
+  padding-top: 114px;
+}
+#section .container {
+  width: 100%;
+}
+#section .container .row .col-xs-2 {
+  width: 10%;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 2px #ddd;
+  padding: 0;
+}
+#section .container .row .col-xs-2 ul.list-unstyled {
+  text-align: center;
+  margin: 0;
+  height: 100%;
+}
+#section .container .row .col-xs-2 ul.list-unstyled li {
+  background-color: #fff;
+}
+#section .container .row .col-xs-2 ul.list-unstyled li a {
+  display: block;
+  width: 100%;
+  height: 140px;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-top: 2.5rem;
+  color: #999;
+}
+#section .container .row .col-xs-2 ul.list-unstyled li a:focus {
+  outline: none;
+}
+#section .container .row .col-xs-2 ul.list-unstyled li a span {
+  display: block;
+  margin: .8rem auto;
+}
+#section .container .row .col-xs-2 ul.list-unstyled li.li_active {
+  background-color: #F4F8FB;
+}
+#section .container .row .col-xs-2 ul.list-unstyled li.li_active a {
+  color: #2B99FF;
+}
+#section .container .row .col-xs-2 ul.list-unstyled li.li_active a:focus {
+  outline: none;
+}
+#section .container .row .col-xs-10 {
+  width: 90%;
+  background-color: #F0F8FF ;
+}
+#section .container .row .col-xs-10 #tab_index,
+#section .container .row .col-xs-10 #tab_case_build,
+#section .container .row .col-xs-10 #tab_case_date,
+#section .container .row .col-xs-10 #tab_case_play,
+#section .container .row .col-xs-10 #tab_case_look {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+#section .container .row .col-xs-10 #tab_index .row {
+  margin: 0;
+  padding: 3rem 3rem;
+}
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail {
+  margin: 1rem auto;
+  box-shadow: 2px 2px 3px #ddd;
+}
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul {
+  margin: 2rem auto;
+}
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li {
+  margin: 1rem 3rem;
+  font-size: 2rem;
+}
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li b {
+  font-weight: 500;
+}
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li span {
+  color: #999;
+}
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li button {
+  background-color: #2B99FF;
+  color: #fff;
+}
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li button:focus {
+  outline: none;
+}
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url(../img/unchoose.png);
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
+  margin: 0 !important;
+}
+input[type="checkbox"]:checked {
+  background: #fff url(../img/choose.png) 0 0;
+}
+/**解决ie出现边框问题**/
+input[type="checkbox"]:focus {
+  outline: none;
+}
