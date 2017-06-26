@@ -12,6 +12,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 					}
 				}
 			})
+			.state('courtAttend',{
+				url:'/mycourtAttend',
+				templateUrl:'custom/court_attend.html'
+			})
 			.state('main', {
 				url: '/mymain',
 				views:{
@@ -48,7 +52,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 				url:'^/mymainHeader',
 				templateUrl:'custom/case/case_header.html',
 				controller:'caseHeaderCtrl'
-			});
+			})
+
 
 	$urlRouterProvider.otherwise('/mylogin');
 });
@@ -88,7 +93,7 @@ app.controller('mainSidebarCtrl',['$scope',function($scope){
 	];
 }]);
 
-//创建index控制器
+//创建main.index控制器
 app.controller('mainIndexCtrl',['$scope',function($scope){
 	//定义index中显示内容的数据
 	$scope.caseIndexList=[
@@ -122,6 +127,6 @@ app.controller('mainIndexCtrl',['$scope',function($scope){
 		console.log($index);
 		$scope.courtName=$scope.caseIndexList[$index].caseAddress;
 		sessionStorage['courtName']=$scope.courtName;
-		location.href='court_attend.html';
+		location.href='custom/court_attend.html';
 	}
 }]);
