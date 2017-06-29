@@ -1,0 +1,62 @@
+@theme_color:#2B99FF;
+@bg_color:#F0F8FF;
+body{
+  background-color: @bg_color;
+}
+.container-fluid{
+  padding: 30px;
+  .row{
+    margin: 10px 0;
+    .build_btn{
+      button{
+        background-color:@theme_color ;
+        color:#fff;
+      }
+    }
+    form{
+      input{
+        border: 1px solid @theme_color;
+      }
+      button{
+        color:#fff;
+      }
+    }
+    #table_content{
+      table{
+        thead{
+          background-color: @theme_color*.9;
+          color: #fff;
+          tr{
+            th{
+              height: 50px;
+              vertical-align: middle;
+              font-size: 18px;
+              font-weight: normal;
+            }
+          }
+        }
+        tbody{
+          background-color: #fff;
+          border: 1px solid #ddd;
+          //height: 500px;
+          tr{
+            td{
+              vertical-align: middle;
+              height: 50px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    #page_list{
+      margin: 0;
+    }
+    div.pull-left{
+      span{
+        display: block;
+        margin: 6px;
+      }
+    }
+  }
+}

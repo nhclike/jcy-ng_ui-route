@@ -1,0 +1,45 @@
+body {
+  background-color: #F0F8FF;
+}
+.container-fluid {
+  padding: 30px;
+}
+.container-fluid .row {
+  margin: 10px 0;
+}
+.container-fluid .row .build_btn button {
+  background-color: #2B99FF;
+  color: #fff;
+}
+.container-fluid .row form input {
+  border: 1px solid #2B99FF;
+}
+.container-fluid .row form button {
+  color: #fff;
+}
+.container-fluid .row #table_content table thead {
+  background-color: #278ae6;
+  color: #fff;
+}
+.container-fluid .row #table_content table thead tr th {
+  height: 50px;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: normal;
+}
+.container-fluid .row #table_content table tbody {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.container-fluid .row #table_content table tbody tr td {
+  vertical-align: middle;
+  height: 50px;
+  font-size: 18px;
+}
+.container-fluid .row #page_list {
+  margin: 0;
+}
+.container-fluid .row div.pull-left span {
+  display: block;
+  margin: 6px;
+}

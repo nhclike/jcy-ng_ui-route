@@ -1,0 +1,43 @@
+@theme_color:#2B99FF;
+@bg_color:#F0F8FF;
+body{
+  background-color: @bg_color;
+}
+.container-fluid{
+  padding: 30px;
+  .row{
+    margin: 20px;
+    form{
+      padding: 20px 50px;
+      fieldset{
+        legend{}
+        .form-group{
+          vertical-align: middle;
+          margin: 30px auto;
+          label{
+            font-size: 20px;
+            font-weight: normal;
+            margin: 8px;
+            text-align: right;
+          }
+          textarea{
+            width: 98%;
+            resize: none;
+          }
+        }
+      }
+      .row{
+        button{
+          width: 150px;
+          margin: 0 20px;
+          background-color: @theme_color;
+          color: #fff;
+        }
+        button:last-child{
+          background-color: @bg_color;
+          color:#000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@theme_color:#2B99FF;
+@bg_color:#F0F8FF;
+input[type='checkbox']{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url(../img/unchoose.png);
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
+  margin: 0 !important;
+}
+input[type="checkbox"]:checked {
+  background: #fff url(../img/choose.png) 0 0;
+}
+/**解决ie出现边框问题**/
+input[type="checkbox"]:focus{
+  outline: none;
+}
+
+.model_center{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+body{
+  background-color:@bg_color;
+}
+.container-fluid{
+  padding: 30px;
+  .row{
+    margin: 0;
+    .col-xs-4{
+      .thumbnail{
+        margin: 1rem auto;
+        box-shadow: 2px 2px 3px #ddd;
+        ul{
+          margin: 2rem auto;
+          li{
+            margin:1rem 3rem;
+            font-size: 2rem;
+            b{
+              font-weight: 500;
+            }
+            span{
+              color: #999;
+            }
+            a{
+              color: red;
+              border: 1px solid red;
+              margin-left:25px;
+            }
+            button{
+              background-color:@theme_color;
+              color: #fff;
+              &:focus{
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

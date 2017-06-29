@@ -1,0 +1,60 @@
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url(../img/unchoose.png);
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
+  margin: 0 !important;
+}
+input[type="checkbox"]:checked {
+  background: #fff url(../img/choose.png) 0 0;
+}
+/**解决ie出现边框问题**/
+input[type="checkbox"]:focus {
+  outline: none;
+}
+.model_center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body {
+  background-color: #F0F8FF;
+}
+.container-fluid {
+  padding: 30px;
+}
+.container-fluid .row {
+  margin: 0;
+}
+.container-fluid .row .col-xs-4 .thumbnail {
+  margin: 1rem auto;
+  box-shadow: 2px 2px 3px #ddd;
+}
+.container-fluid .row .col-xs-4 .thumbnail ul {
+  margin: 2rem auto;
+}
+.container-fluid .row .col-xs-4 .thumbnail ul li {
+  margin: 1rem 3rem;
+  font-size: 2rem;
+}
+.container-fluid .row .col-xs-4 .thumbnail ul li b {
+  font-weight: 500;
+}
+.container-fluid .row .col-xs-4 .thumbnail ul li span {
+  color: #999;
+}
+.container-fluid .row .col-xs-4 .thumbnail ul li a {
+  color: red;
+  border: 1px solid red;
+  margin-left: 25px;
+}
+.container-fluid .row .col-xs-4 .thumbnail ul li button {
+  background-color: #2B99FF;
+  color: #fff;
+}
+.container-fluid .row .col-xs-4 .thumbnail ul li button:focus {
+  outline: none;
+}

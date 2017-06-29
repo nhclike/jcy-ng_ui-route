@@ -1,0 +1,36 @@
+body {
+  background-color: #F0F8FF;
+}
+.container-fluid {
+  padding: 30px;
+}
+.container-fluid .row {
+  margin: 20px;
+}
+.container-fluid .row form {
+  padding: 20px 50px;
+}
+.container-fluid .row form fieldset .form-group {
+  vertical-align: middle;
+  margin: 30px auto;
+}
+.container-fluid .row form fieldset .form-group label {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 8px;
+  text-align: right;
+}
+.container-fluid .row form fieldset .form-group textarea {
+  width: 98%;
+  resize: none;
+}
+.container-fluid .row form .row button {
+  width: 150px;
+  margin: 0 20px;
+  background-color: #2B99FF;
+  color: #fff;
+}
+.container-fluid .row form .row button:last-child {
+  background-color: #F0F8FF;
+  color: #000;
+}
