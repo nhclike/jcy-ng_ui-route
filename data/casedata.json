@@ -1,0 +1,32 @@
+[
+  {
+    "caseNumber":"案号1",
+    "caseStartTime":"2017-4-4 10:20:21",
+    "caseStatue":"休庭中",
+    "caseStatueN":"2"
+  },
+  {
+    "caseNumber":"案号2",
+    "caseStartTime":"2017-4-4 10:20:21",
+    "caseStatue":"休庭中",
+    "caseStatueN":"2"
+  },
+  {
+    "caseNumber":"案号3",
+    "caseStartTime":"2017-4-4 10:20:21",
+    "caseStatue":"休庭中",
+    "caseStatueN":"2"
+  },
+  {
+    "caseNumber":"案号4",
+    "caseStartTime":"2017-4-4 10:20:21",
+    "caseStatue":"休庭中",
+    "caseStatueN":"2"
+  },
+  {
+    "caseNumber":"案号5",
+    "caseStartTime":"2017-4-4 10:20:21",
+    "caseStatue":"休庭中",
+    "caseStatueN":"2"
+  }
+]

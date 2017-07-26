@@ -1,5 +1,5 @@
 //创建模块
-var app=angular.module('procuratorate',['ng','ui.router']);
+var app=angular.module('procuratorate',['ng','ui.router','ngAnimate', 'ui.bootstrap']);
 
 //配置状态
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -27,11 +27,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 					}
 				}
 			})
-			.state('public.sidebar', {
-				url: '^/mypublicSidebar',
-				templateUrl: 'custom/case/case_sidebar.html',
-				controller:'publicSidebarCtrl'
-			})
 			.state('public.index', {
 				url: '^/mypublicIndex',
 				templateUrl: 'custom/case/case_index.html'
@@ -46,13 +41,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			})
 			.state('public.date', {
 				url: '^/mypublicDate',
-				templateUrl: 'custom/case/case_date.html'
+				templateUrl: 'custom/case/case_date.html',
 			})
-			.state('caseHeader',{
-				url:'^/mypublicHeader',
-				templateUrl:'custom/case/case_header.html',
-				controller:'caseHeaderCtrl'
-			});
 	$urlRouterProvider.otherwise('/mylogin');
 });
 
@@ -64,6 +54,4 @@ app.controller('parent',['$scope','$state',function($scope,$state){
 		console.log(' jump func is called ');
 		$state.go(desState, params);
 	};
-	$scope.test='this is a test';
-
 }]);

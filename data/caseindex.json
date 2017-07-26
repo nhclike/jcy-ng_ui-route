@@ -1,0 +1,27 @@
+[
+  {
+    "caseNumber":"某某案号1",
+    "caseAddress":"某法院某法庭2",
+    "caseTime":"2017-4-4 10:20:21"
+  },
+  {
+    "caseNumber":"某某案号2",
+    "caseAddress":"某法院某法庭2",
+    "caseTime":"2017-4-4 10:20:21"
+  },
+  {
+    "caseNumber":"某某案号3",
+    "caseAddress":"某法院某法庭2",
+    "caseTime":"2017-4-4 10:20:21"
+  },
+  {
+    "caseNumber":"某某案号4",
+    "caseAddress":"某法院某法庭2",
+    "caseTime":"2017-4-4 10:20:21"
+  },
+  {
+    "caseNumber":"某某案号5",
+    "caseAddress":"某法院某法庭2",
+    "caseTime":"2017-4-4 10:20:21"
+  }
+]

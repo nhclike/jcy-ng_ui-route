@@ -1,7 +1,7 @@
 
     <link rel="stylesheet" href="css/case_date.css">
 
-    <div class="container-fluid">
+    <div class="container-fluid" ng-controller="caseDateCtrl">
       <!--查询表格-->
       <div class="row">
         <div class="col-sm-12 build_btn">
@@ -15,26 +15,26 @@
           <div class="row">
             <div class="form-group form-group-lg col-sm-2 col-xs-12">
               <label for="" class="control-label sr-only">案号</label>
-              <input type="text" placeholder="案号" class="form-control">
+              <input type="text" placeholder="案号" class="form-control" ng-model="checkoutList.caseNumber">
             </div>
             <div class="form-group form-group-lg col-sm-2 col-xs-12">
               <label for="" class="control-label sr-only">案由</label>
-              <input type="text" placeholder="案由" class="form-control">
+              <input type="text" placeholder="案由" class="form-control" ng-model="checkoutList.caseCause">
             </div>
             <div class="form-group form-group-lg col-sm-2 col-xs-12">
               <label for="" class="control-label sr-only">开始时间</label>
-              <input type="text" placeholder="开始时间" class="form-control">
+              <input type="text" placeholder="开始时间" class="form-control" ng-model="checkoutList.caseStartTime">
             </div>
             <div class="form-group form-group-lg col-sm-2 col-xs-12">
               <label for="" class="control-label sr-only">被讯人</label>
-              <input type="text" placeholder="被讯人" class="form-control">
+              <input type="text" placeholder="被讯人" class="form-control" ng-model="checkoutList.casePersonal">
             </div>
             <div class="form-group form-group-lg col-sm-2 col-xs-12">
               <label for="" class="control-label sr-only">讯问人</label>
-              <input type="text" placeholder="讯问人" class="form-control">
+              <input type="text" placeholder="讯问人" class="form-control" ng-model="checkoutList.caseAnswered">
             </div>
             <div class="form-group col-sm-2 col-xs-12">
-              <button type="button" class="btn btn-danger btn-lg">查&nbsp;&nbsp;&nbsp;&nbsp;询</button>
+              <button type="button" class="btn btn-danger btn-lg" ng-click="submitCheckout()">查&nbsp;&nbsp;&nbsp;&nbsp;询</button>
             </div>
           </div>
         </form>
@@ -61,374 +61,14 @@
             <div  style="display:block; max-height:500px;width:100%;overflow:auto;overflow-x:hidden" >
               <table class="table text-center table-hover" cellpadding="2rem" style="margin: 0" >
                 <tbody>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
-                    <td style="width: 21%">
-                      <a href="">编辑</a>
-                      <a href="">删除</a>
-                      <a href="">查看</a>
-                      <a href="">进入审讯</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 20%">(2017)浙0102民初11号</td>
-                    <td style="width: 15%">某某法院5号法庭</td>
-                    <td style="width: 15%">2017-06-24 10:00</td>
-                    <td style="width: 5%">2</td>
-                    <td style="width: 8%">案件类型</td>
-                    <td style="width: 8%">王大军</td>
-                    <td style="width: 8%">张小伟</td>
+                  <tr ng-repeat="item in caseDataDateList track by $index">
+                    <td style="width: 20%">{{item.caseNumber}}</td>
+                    <td style="width: 15%">{{item.caseAddress}}</td>
+                    <td style="width: 15%">{{item.caseStartTime}}</td>
+                    <td style="width: 5%">{{item.caseStatue}}</td>
+                    <td style="width: 8%">{{case.StatueN}}</td>
+                    <td style="width: 8%">{{item.casePersonal}}</td>
+                    <td style="width: 8%">{{item.caseAnswer}}</td>
                     <td style="width: 21%">
                       <a href="">编辑</a>
                       <a href="">删除</a>

@@ -21,39 +21,58 @@ app.controller('publicSidebarCtrl',['$scope',function($scope){
 }]);
 
 //创建public.index控制器
-app.controller('publicIndexCtrl',['$scope',function($scope){
+app.controller('publicIndexCtrl',['$scope','$http',function($scope,$http){
   //定义index中显示内容的数据
-  $scope.caseIndexList=[
-    {
-      caseNumber:'某某案号1',
-      caseAddress:'某法院某法庭1',
-      caseTime:'2017-4-4 10:20:21'
-    },
-    {
-      caseNumber:'某某案号2',
-      caseAddress:'某法院某法庭2',
-      caseTime:'2017-4-4 10:20:21'
-    },
-    {
-      caseNumber:'某某案号3',
-      caseAddress:'某法院某法庭3',
-      caseTime:'2017-4-4 10:20:21'
-    },
-    {
-      caseNumber:'某某案号4',
-      caseAddress:'某法院某法庭4',
-      caseTime:'2017-4-4 10:20:21'
-    },{
-      caseNumber:'某某案号5',
-      caseAddress:'某法院某法庭5',
-      caseTime:'2017-4-4 10:20:21'
-    }
-  ];
+  $scope.caseIndexList=[];
+  //发起网络请求初始化一些数据
+    $http
+        .get('data/caseindex.json')
+        .success(function(data){
+           $scope.caseIndexList=data;
+        });
   //点击庭审出席跳转到对应的法庭
   $scope.enterCourt=function($index){
-    console.log($index);
     $scope.courtName=$scope.caseIndexList[$index].caseAddress;
     sessionStorage['courtName']=$scope.courtName;
     location.href='custom/court_attend.html';
-  }
+  };
+
+}]);
+//创建public.index中模态框控制器（单模态框处理）
+app.controller('modalCtrl',['$scope','$http',function ($scope,$http) {
+    //请求排期数据
+    $http
+        .get('data/casedata.json')
+        .success(function(data){
+            $scope.caseDataList=data;
+        });
+}]);
+//创建案件排期控制器
+app.controller('caseDateCtrl',['$scope','$http','$stateParams','$httpParamSerializerJQLike',function($scope,$http,$stateParams,$httpParamSerializerJQLike){
+    //表格数据
+    $http
+        .get('data/casedatadate.json')
+        .success(function(data){
+            $scope.caseDataDateList=data;
+        });
+    //查询列表
+    $scope.checkoutList={
+        caseNumber:'',
+        caseCause:'',
+        caseStartTime:'',
+        casePersonal:'',
+        caseAnswered:''
+    };
+    //点击查询时，拿到用户的输入
+    $scope.submitCheckout=function () {
+        //将用户查询输入序列化发送给后台
+        var str=$httpParamSerializerJQLike($scope.checkoutList);
+        console.log(str);
+        
+    };
+    //新建案件，新建排期两个模态框的问题（多模态框处理）
+    $scope.newBuildCase=function () {
+        
+    }
+
 }]);
